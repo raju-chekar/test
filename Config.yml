@@ -46,7 +46,7 @@ jobs:
     steps:
       - run: echo world
 workflows:
-  # Name the workflow "welcome"
+  # Name the workflow "welcome1"
   welcome:
     # Run the welcome/run job in its own container
     jobs:
@@ -54,5 +54,5 @@ workflows:
       - print_hello
       - print_world:
           requires:
->>>>>>> af48f79cf83cae2b17748a3484d129ce98a7f986
+
             - print_hello
